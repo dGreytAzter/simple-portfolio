@@ -1,6 +1,11 @@
+* {
+    border: none;
+    outline: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    color: azure;
+    color: rgb(219, 219, 219);
     background: url(img/code-bg3.jpg);
     background-position: center;
     background-size: cover;
@@ -13,8 +18,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto 50px;
-    top: 10px;
+    margin: auto 100px;
+    margin-bottom: 40px;
 }
 
 nav {
@@ -198,26 +203,41 @@ form {
 input {
     width: 250px;
     height: 40px;
-    background:rgba(0, 0, 0, 0.5);
-    color: azure;
+    background:rgba(68, 68, 68, 0.5);
+    color: rgb(219, 219, 219);
     margin: 3px;
-    border-color: rgb(78, 175, 255);
     border-radius: 4px;
 }
 
 .btn {
+    margin: 10px;
     cursor: pointer;
+    background: rgb(219, 219, 219);
+    color: rgb(78, 175, 255);
+    font-size: 16px;
+    font-weight: 300;
+    transition: .5s ease;
 }
 
+.btn:hover {
+    background: rgb(78, 175, 255);
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+    font-weight: 300;
+    transition: 1s ease;
+}
+
+
+
 textarea {
-    background:rgba(0, 0, 0, 0.5);
-    border-color: rgb(78, 175, 255);
-    color: azure;
+    background:rgba(68, 68, 68, 0.5);
+    color: rgb(219, 219, 219);
     margin: 3px;
 }
 
 .head-contact {
     font-size: 30px;
+    margin: 20px;
 }
 
 .me {
@@ -241,7 +261,6 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /* background: blue; */
     height: 800px;
     width: 30%;
     margin: 5px;
@@ -252,7 +271,6 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /* background: blue; */
     height: 800px;
     width: 50%;
     margin: 5px;

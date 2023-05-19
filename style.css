@@ -48,10 +48,12 @@ nav a:hover {
     border-radius: 10px;
     width: 85%;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
-img {
-    height: 40em;
+.img-guy {
+    height: 30em;
+    margin: 100px auto;
 }
 
 .realname {

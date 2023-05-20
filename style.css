@@ -336,3 +336,35 @@ h4 {
     height: 20px;
     width: 20px;
 }
+
+@media screen and (max-width: 600px) {
+
+   
+    .header-logo {
+        height: 50px;
+    }
+
+    nav {
+        font-size: .9rem;
+        display: flex;
+    }
+    
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+
+    .name-title {
+        text-align: center;
+    }
+    
+    .img-guy {
+        height: 20em;
+        margin: 10px auto;
+    }
+    
+}

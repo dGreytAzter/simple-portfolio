@@ -133,6 +133,7 @@ footer {
 
 .ul-aboutme {
     padding-inline-start: 0;
+    font-weight: 300;
 }
 
 /* Skill CSS */
@@ -335,6 +336,25 @@ h4 {
 .icon-resume {
     height: 20px;
     width: 20px;
+}
+
+/* link background */
+
+nav .home {
+    background: red;
+}
+
+nav .about {
+    background: red;
+}
+nav .skills {
+    background: red;
+}
+nav .resume {
+    background: red;
+}
+nav .contact {
+    background: red;
 }
 
 @media screen and (max-width: 600px) {

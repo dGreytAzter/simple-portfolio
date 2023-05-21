@@ -342,33 +342,127 @@ h4 {
 
 nav .home {
     background: red;
+    border-radius: 3px;
 }
 
 nav .about {
     background: red;
+    border-radius: 3px;
 }
 nav .skills {
     background: red;
+    border-radius: 3px;
 }
 nav .resume {
     background: red;
+    border-radius: 3px;
 }
 nav .contact {
     background: red;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 900px) {
+
+    /*Responsive About Me */
+
+    .container-aboutme {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    /* Responsive Resume */
+
+    .container-resume {
+        width: 80%;
+    }
+
+    .side-1, .side-2 {
+        height: 100%;
+    }
+    
+    .resume-pic {
+        height: 150px;
+        width: 150px;
+        align-self: center;
+    }
+
+    .side-2 p {
+        font-size: 12px;
+        margin: 0 30px 0 30px;
+    }
+
+    .ul-contact {
+        font-size: 12px;
+    }
+
+    .ul-skills {
+        font-size: 13px;
+    }
+
+    .ul-workexp {
+        font-size: 12px;
+    }
+
+    .ul-education {
+        font-size: 12px;
+    }
+
+    /*Responsive Skills Css */
+
+    .container-skills {
+        font-size: 15px;
+        width: 90%;
+    }
+
+    .skills-1, .skills-2 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* Responsive Contact CSS */
+
+    .container-contact {
+        width: 50%;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    textarea {
+        width: 410px;
+    }
+    
 }
 
 @media screen and (max-width: 600px) {
 
+    header {
+        margin: auto 50px;
+        margin-bottom: 20px;
+        display: flex;
+        
+    }
    
     .header-logo {
         height: 50px;
     }
 
     nav {
-        font-size: .9rem;
         display: flex;
+        flex-direction: column;
     }
-    
+
+    nav .nav-link {
+        position: absolute;
+        right: 0;
+        display: grid;
+        top: 6%;
+        transform: translateY(-150%);
+        transition: .5s ease;
+        z-index: 2;
+    }
 
     .container {
         display: flex;
@@ -386,5 +480,121 @@ nav .contact {
         height: 20em;
         margin: 10px auto;
     }
+
+    nav .nav-toggler {
+        display: grid !important;
+        position: relative;
+
+    }
+
+    /*Responsive About Me */
+
+    .container-aboutme {
+        font-size: 15px;
+    }
     
+    .words-aboutme {
+        margin: auto 20px;
+        font-weight: 200;
+    }
+    
+    .head-aboutme h1, .hobbies-aboutme h1{
+        font-size: 25px;
+    }
+    
+    .ul-aboutme {
+        font-weight: 200;
+    }
+
+    /*Responsive Skills Css */
+
+    .container-skills {
+        font-size: 15px;
+    }
+
+    .skills-1, .skills-2 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .words-skills {
+        display: grid;
+    }
+
+    /* Responsive Resume */
+
+    .container-resume {
+        width: 90%;
+    }
+    
+    .side-1, .side-2 {
+        height: 100%;
+    }
+     
+    .resume-pic {
+        height: 150px;
+        width: 150px;
+        align-self: center;
+    }
+    
+    .side-2 p {
+        font-size: 11px;
+        margin: 0 30px 0 30px;
+    }
+    
+    .ul-contact {
+        font-size: 11px;
+    }
+    
+    .ul-skills {
+        font-size: 12px;
+    }
+    
+    .ul-workexp {
+        font-size: 11px;
+    }
+    
+    .ul-education {
+        font-size: 11px;
+    }
+
+    /* Responsive Contact CSS */
+
+    .container-contact {
+        width: 70%;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    textarea {
+        width: 410px;
+    }
+
+}
+
+/* Toggle Menu */
+
+#toggle {
+    display: none;
+}
+
+nav .nav-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+nav .nav-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+input:checked ~ nav .nav-link {
+    transform: translateY(0);
+    transition: 1s ease;
 }

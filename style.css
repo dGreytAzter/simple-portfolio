@@ -1,17 +1,17 @@
 * {
     border: none;
     outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     color: rgb(219, 219, 219);
     background: url(img/code-bg3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
 }
 
 header {
@@ -20,9 +20,10 @@ header {
     justify-content: space-between;
     margin: auto 100px;
     margin-bottom: 40px;
+    margin-top: 10px;
 }
 
-nav {
+nav .nav-link {
     font-size: 1.1rem;
     display: flex;
 }
@@ -338,7 +339,7 @@ h4 {
     width: 20px;
 }
 
-/* link background */
+/* Active link background */
 
 nav .home {
     background: red;
@@ -597,4 +598,70 @@ nav .nav-toggler .bar {
 input:checked ~ nav .nav-link {
     transform: translateY(0);
     transition: 1s ease;
+}
+
+/* Animated Coder */
+
+.play-coder {
+    position: absolute;
+    height: 15%;
+    border-radius: 20px;
+    top: 8%;
+    right: 35%;
+    opacity: 0;
+    transition: .3 ease;
+}
+
+#circle1, #circle2, #circle3 {
+    position: absolute;
+    background: white;
+    border-radius: 50%; 
+}
+
+#circle1 {
+    height: 2rem;
+    width: 2rem;
+    top: 24%;
+    right: 42%;
+}
+
+#circle2 {
+    height: 1.5rem;
+    width: 1.5rem;
+    top: 29%;
+    right: 40%;
+}
+
+#circle3 {
+    height: 1rem;
+    width: 1rem;
+    top: 32%;
+    right: 37.5%;
+}
+
+.circle {
+    opacity: 0;
+    transition: .3 ease;
+}
+
+.img-hero:hover .circle{
+    opacity: 1;
+    transition: 1s ease;
+    transform: translate(10%);
+}
+
+.img-hero:hover .play-coder{
+    opacity: 1;
+    transition: 1s ease;
+    transform: translate(5%);
+}
+
+/* animeted line for Name */
+
+.animated-line {
+    height: 50px;
+    width: 100%;
+    top: 36%;
+    left: .5%;
+    position: absolute;
 }

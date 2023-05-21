@@ -388,7 +388,6 @@ nav .contact {
         margin: 10px auto;
     }
     
-<<<<<<< HEAD
     .words-aboutme {
         margin: auto 20px;
         font-weight: 200;
@@ -559,6 +558,4 @@ input:checked ~ nav .nav-link {
     top: 36%;
     left: .5%;
     position: absolute;
-=======
->>>>>>> parent of 626c3ff (Responsive Website)
 }
